@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background: rgb(28, 26, 26);
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: #F05941;
+}
+
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    
+}
+
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #F05941;
+}
+
+#navbarSupportedContent button{
+    background-color: #ffbd03;
+    border-radius: 5px;
+    color: #030000;
+    
+}
+
+/* #home{
+    width: 100%;
+    min-height: 93.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./Assests/Images/photo-1570129476815-ba368ac77013.avif);
+    background-position: center;
+    background-size: cover;
+} */
+
+/* Home */
+
+
+
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 92vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./Assests/Images/photo-1570129476815-ba368ac77013.avif);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .home .content{
+    flex: 1 1 50rem;
+    padding-top: 1rem;
+    
+  }
+  
+  .home .content .title{
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .home .content .title span{
+    text-transform: uppercase;
+    color: #F05941;
+  }
+  
+  .home .content .description{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+  }
+  
+  .home .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 1rem;
+    font-size: 1.3rem;
+    color: #0f0e0e;
+    background: #ffbd03;
+    cursor: pointer;
+    border-radius: 25px;
+
+  }
+
+  .home .content .btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 1rem;
+    font-size: 1.3rem;
+    color: #fcfbfb;
+    background: none;
+    cursor: pointer;
+    border-color:#ffbd03;
+    border-radius: 25px;
+  }
+  
+  .home .content .btn:hover{
+    letter-spacing: .2rem;
+  }
+  
+  .home .image{
+    flex: 1 1 40rem;
+  } 
+  
+  .home .image img{
+    width: 100%;
+    
+  }
+  
+  /* end */
+  
+  @media (max-width:991px){
+    html{
+      font-size: 55%;
+    }
+  
+    .header{
+      padding: 2rem;
+    }
+  
+    section{
+      padding: 2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    .header #menu{
+      display: inline-block;
+    }
+  
+    .header .navbar{
+      position: fixed;
+      top: 0; right: -105%;
+      width: 30rem;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(50px);
+      transition: .5s;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index: 1200;
+    }
+  
+    .header .navbar.active{
+      right: 0;
+    }
+  
+    .header .navbar #close{
+      display: block;
+    }
+  
+    .header .navbar a{
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+    .home .content{
+      padding-top: 9.5rem;
+    }
+  
+    .home .image img{
+      width: 368px;
+    } 
+  
+    .home .content .title{
+      font-size: 4rem;
+    }
+  
+    .home .content .description{
+      font-size: 1.6rem;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+    html{
+      font-size: 50%;
+    }
+  }
+
+  .home{
+    padding: 2rem 9%;
+  }
+  
+
+  /* About us */
+
+  /*---------------------------------------
+  ABOUT              
+-----------------------------------------*/
+.about-image-wrap {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-image-info {
+  background: linear-gradient(to top, var(--dark-color), transparent 90%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 40px;
+}
+
+.about-image {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-thumb {
+  background: var(--primary-color);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  padding: 40px;
+}
+
+#section_2{
+  display: flex;
+    flex-wrap: wrap;
+    min-height: 110vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdbebf;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(./Assests/Images/lp-ban-how-to-open-mechanic-shop-1200x630.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card{
+    
+    border: none;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3),
+                inset 4px 4px 10px rgb(16, 12, 12);
+    border-radius: 20px !important;
+
+}
+
+.one{
+  padding-left: 35px;
+}
+
+/* contact */
+
+.contact{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+  
+}
+
+.section-title{
+  text-align: center;
+}
+
+.contact .info i {
+  font-size: 20px;
+  background: #ffc451;
+  color: #151515;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #ffc451;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #ffbd03;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #ffcd6b;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9)), url(./Assests/Images/professional-auto-repair-shop-tool-generate-ai-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffb03b;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ffb03b;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}

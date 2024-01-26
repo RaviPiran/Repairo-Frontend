@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background-color: #60609e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;  
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 27%;
+  flex-wrap: wrap;
+}
+
+#nothing-alert{
+	display: none;
+	width: 100%;
+	margin: 50px auto;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin: 0.5em;
+  background-color: #b4e45a;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  animation: populate 0.5s ease-out normal backwards;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes populate {
+  0% {
+    transform: scale(0);
+  }
+}
+
+.icon-name {
+  font-size: 1.0em;
+  text-align: center;
+  margin: 0;
+}
+
+.search-container{
+  position: relative;
+  height: 55px;
+  max-width: 750px;
+  width: 70%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 30%;
+}
+
+.search-container i {
+  position: absolute;
+  left: 20px;
+  font-size: 16px;
+  color: #707070;
+}
+
+#search-input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  padding-left: 50px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 786px) {
+  .search-container{
+    width: 50%;
+  }
+}
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background: rgb(28, 26, 26);
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: #F05941;
+}
+
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    
+}
+
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid rgb(31, 223, 44);
+}
+
+#navbarSupportedContent button{
+    background-color: #ffbd03;
+    border-radius: 5px;
+    color: #030000;
+    
+}
